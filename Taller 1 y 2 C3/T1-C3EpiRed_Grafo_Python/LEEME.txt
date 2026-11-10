@@ -1,0 +1,43 @@
+EPIRed - Implementación de Welsh-Powell
+
+1. Extrae el ZIP completo.
+2. Abre Guia_para_exponer.docx para estudiar.
+3. Abre welsh_powell.py y explica los comentarios PASO 1 a PASO 5.
+4. En una terminal dentro de esta carpeta ejecuta:
+   py welsh_powell.py
+   Si usas el comando python: python welsh_powell.py
+
+Requiere Python 3.7 o superior. No necesita instalar librerías.
+También puedes abrir el archivo en IDLE y presionar F5.
+
+Resultado esperado:
+Turno 1: Centro, Kennedy, Engativá
+Turno 2: Norte, Oriente, Occidente
+Turno 3: Sur, Suba
+Total de turnos utilizados: 3
+
+El programa usa el diccionario y las tablas de Taller1_C3.docx.
+El dibujo de ese documento tiene conexiones distintas: revísalo antes
+de exponer. La implementación no modifica tu documento original.
+El taller no exige dibujar el grafo en la implementación.
+
+GRAFO INTERACTIVO (visualización adicional)
+Mantén grafo_interactivo.py y welsh_powell.py en la misma carpeta.
+Ejecuta: py grafo_interactivo.py
+También puedes abrir grafo_interactivo.py en IDLE y presionar F5.
+- Los colores y las etiquetas indican el turno de cada zona.
+- Haz clic en una zona: sus conflictos se resaltan en rojo y se describen abajo.
+- Arrastra una zona para moverla. Esto no modifica sus conflictos ni su turno.
+- Desmarca Mostrar turnos para ver el grafo sin la coloración.
+- Restablecer posiciones recupera la distribución inicial.
+La ventana utiliza Tkinter, que viene con la instalación estándar de Python
+para Windows. Si falta, modifica la instalación de Python y activa Tcl/Tk e IDLE.
+Los turnos se calculan importando la misma función del taller, sin duplicarla.
+
+Si editas los datos, conserva un grafo no dirigido sin lazos:
+no pongas una zona como vecina de sí misma, no repitas vecinos,
+define todas las zonas mencionadas y registra cada conflicto en ambos sentidos.
+
+La cantidad de colores de Welsh-Powell no siempre es la mínima.
+En este caso sí lo es: Norte, Suba y Engativá forman un triángulo,
+que exige al menos 3 colores, y el programa consigue 3.

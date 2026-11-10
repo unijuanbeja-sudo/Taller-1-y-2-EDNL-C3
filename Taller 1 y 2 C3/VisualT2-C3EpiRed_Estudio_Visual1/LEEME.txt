@@ -1,0 +1,40 @@
+TALLER 2 - GRAFO SENCILLO EN PYTHON
+
+Ejecuta el archivo COMPLETO taller.py para imprimir la comparación y abrir
+la ventana. Mantén taller.py y grafo_interactivo.py en la misma carpeta.
+
+En una terminal dentro de esta carpeta:
+    py taller.py
+También sirve: python taller.py
+Para abrir solo la ventana: py grafo_interactivo.py
+Para obtener solo texto: py taller.py --consola
+
+EN VS CODE
+Guarda el archivo y usa "Run Python File in Terminal" / "Ejecutar archivo
+de Python en terminal". No ejecutes solamente un fragmento seleccionado.
+Si aparece tempCodeRunnerFile.py, se está ejecutando un archivo temporal
+de Code Runner; ejecuta taller.py completo con el comando anterior.
+
+EN LA VENTANA
+- Elige BFS, DFS o UCS y los municipios de origen y destino.
+- Los cambios actualizan la ruta inmediatamente.
+- Verde: origen. Morado: destino. Naranja: ruta encontrada.
+- Los números sobre las conexiones son tiempos ficticios en minutos.
+- Un clic muestra conexiones en rojo; no representan conflictos de turnos.
+- Arrastra los municipios y usa Restablecer posiciones para acomodarlos.
+- Si origen y destino coinciden, la ruta tiene cero tramos y cero minutos.
+
+Para ir de A (Medellín) a E (Sabaneta):
+BFS: A -> D -> E; 2 tramos; 42 minutos.
+DFS: A -> B -> C -> D -> E; 4 tramos; 72 minutos.
+UCS: A -> C -> D -> E; 3 tramos; 37 minutos.
+
+BFS minimiza tramos. DFS sigue una rama y no garantiza una ruta mínima.
+UCS minimiza el costo total con estos pesos no negativos.
+El orden de búsqueda puede incluir nodos que no pertenecen a la ruta final.
+
+El código de los algoritmos está en taller.py; los dibujos y controles están
+en grafo_interactivo.py. Solo usa la biblioteca estándar de Python.
+Tkinter viene con Python para Windows si está activada la opción Tcl/Tk e IDLE.
+
+La presentación HTML y los documentos anteriores siguen como material de apoyo.
